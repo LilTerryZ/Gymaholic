@@ -5,9 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="86dp" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="411dp"
-        android:layout_height="83dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="648dp" />
+        android:layout_width="415dp"
+        android:layout_height="110dp"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="621dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

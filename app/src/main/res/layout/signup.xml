@@ -10,9 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Username"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteX="82dp"
         tools:layout_editor_absoluteY="76dp" />
 
     <EditText
@@ -20,8 +20,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:password="true"
         tools:layout_editor_absoluteX="82dp"
         tools:layout_editor_absoluteY="148dp" />
 
@@ -29,7 +30,17 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Sign Up"
         tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="470dp" />
+        tools:layout_editor_absoluteY="414dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="107dp"
+        android:layout_height="47dp"
+        android:text="Coach?"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="218dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

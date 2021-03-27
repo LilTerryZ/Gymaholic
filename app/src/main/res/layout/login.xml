@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Username"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="73dp" />
 
@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:password="true"
+        android:hint="Password"
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="158dp" />
 
@@ -29,7 +30,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Log in"
         tools:layout_editor_absoluteX="159dp"
         tools:layout_editor_absoluteY="249dp" />
 
@@ -37,7 +38,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Sign Up"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="331dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
