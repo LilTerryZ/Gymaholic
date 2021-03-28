@@ -18,6 +18,8 @@
     <string name="example_str_home">John Smith\'s weight loss program</string>
     <string name="pay_booking">Pay</string>
     <string name="date_time_set">Set</string>
+    <string name="yes_op">Yes</string>
+    <string name="no_op">No</string>
     <string name="date_lbl">Date</string>
     <string name="time_lbl">Time</string>
     <string name="type_hint">Type here...</string>

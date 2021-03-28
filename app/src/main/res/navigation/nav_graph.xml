@@ -3,7 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/nav_login">
+    app:startDestination="@id/nav_home">
+
+    <dialog
+        android:id="@+id/nav_logoutDialog"
+        android:name="com.example.gymaholic.LogoutDialog"
+        android:label="LogoutDialog" />
+    <action android:id="@+id/action_global_logout" app:destination="@id/nav_login" />
 
     <fragment
         android:id="@+id/nav_home"

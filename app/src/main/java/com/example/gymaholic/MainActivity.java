@@ -19,6 +19,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements MyDrawerController {
     private AppBarConfiguration mAppBarConfiguration;
+    private static final String LOGOUT_FRAGMENT_TAG = "logoutFragment";
     private NavController navController;
    private  DrawerLayout drawer;
 
@@ -56,13 +57,11 @@ public class MainActivity extends AppCompatActivity implements MyDrawerControlle
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-      /* if (item.getItemId() == R.id.action_logout) {
-            LoginFragment loginFragment = LoginFragment.newInstance();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content,loginFragment)
-                    .addToBackStack(null)
-                    .commit();
-            return true;
-        }/*/
+       if (item.getItemId() == R.id.action_logout) {
+           LogoutDialog logoutFragment = LogoutDialog.newInstance();
+           logoutFragment.show(getSupportFragmentManager(), LOGOUT_FRAGMENT_TAG);
+           return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
