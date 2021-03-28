@@ -17,9 +17,10 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MyDrawerController {
     private AppBarConfiguration mAppBarConfiguration;
     private NavController navController;
+   private  DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
        // NavHostFragment navHostFragment = FragmentManager.findFragment(findViewById(R.id.nav_host_fragment));
        // navController = navHostFragment.getNavController();
@@ -55,11 +56,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-       /* if (item.getItemId() == R.id.action_logout) {
-            LogoutDialog logoutFragment = LogoutDialog.newInstance();
-            logoutFragment.show(getSupportFragmentManager(), LOGOUT_FRAGMENT_TAG);
+      /* if (item.getItemId() == R.id.action_logout) {
+            LoginFragment loginFragment = LoginFragment.newInstance();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content,loginFragment)
+                    .addToBackStack(null)
+                    .commit();
             return true;
-        }*/
+        }/*/
         return super.onOptionsItemSelected(item);
     }
 
@@ -68,5 +71,15 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public void setDrawerLocked() {
+        drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+    }
+
+    @Override
+    public void setDrawerUnlocked() {
+        drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
     }
 }

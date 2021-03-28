@@ -9,7 +9,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 
 
-class LoginFragment : Fragment() {
+class SignupFragment : Fragment() {
 
     private lateinit var navController: NavController
 
@@ -20,7 +20,7 @@ class LoginFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.login_fragment, container, false)
+        val view = inflater.inflate(R.layout.signup_fragment, container, false)
         // Inflate the layout for this fragment
         return view
     }
@@ -29,10 +29,8 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         navController = findNavController()
 
-        val loginBtn = view.findViewById<View>(R.id.login_btn)
-        loginBtn.setOnClickListener { navController.navigate(R.id.action_login_to_home, arguments) }
-        val signupBtn = view.findViewById<View>(R.id.signup_btn)
-        signupBtn.setOnClickListener { navController.navigate(R.id.action_login_to_signup, arguments) }
+        val signupBtn = view.findViewById<View>(R.id.signup_btn_signingup)
+        signupBtn.setOnClickListener { navController.navigate(R.id.action_signup_to_home, arguments) }
     }
 
     companion object {

@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/personName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="73dp"
@@ -18,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/phonenum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
@@ -26,23 +27,23 @@
         android:ems="10"
         android:hint="@string/password_hint"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/personName"
+        app:layout_constraintTop_toBottomOf="@+id/personName" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login_btn"
         android:layout_width="231dp"
         android:layout_height="52dp"
         android:layout_marginBottom="24dp"
         android:backgroundTint="@color/green_material"
         android:text="@string/log_in"
         app:cornerRadius="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/signup_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signup_btn"
         android:layout_width="231dp"
         android:layout_height="52dp"
         android:layout_marginTop="128dp"
@@ -52,5 +53,5 @@
         app:cornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/phonenum" />
 </androidx.constraintlayout.widget.ConstraintLayout>

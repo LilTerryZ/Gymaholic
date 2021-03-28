@@ -24,4 +24,6 @@
     <string name="send_btn">Send</string>
     <string name="sessions_lbl">No active session yet</string>
     <string name="hour_glass">hour glass</string>
+    <string name="phone_hint">Phone</string>
+    <string name="your_name_hint">Name</string>
 </resources>
