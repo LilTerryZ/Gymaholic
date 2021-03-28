@@ -39,6 +39,13 @@
     </fragment>
 
     <fragment
+        android:id="@+id/nav_schedule"
+        android:name="com.example.gymaholic.ScheduleFragment"
+        android:label="Schedule"
+        tools:layout="@layout/schedule_fragment" >
+    </fragment>
+
+    <fragment
         android:id="@+id/nav_login"
         android:name="com.example.gymaholic.LoginFragment"
         android:label="Login"

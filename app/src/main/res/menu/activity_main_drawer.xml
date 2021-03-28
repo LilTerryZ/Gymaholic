@@ -8,10 +8,10 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_black_24"
             android:title="@string/menu_home" />
-        <!--<item
+        <item
             android:id="@+id/nav_schedule"
             android:icon="@drawable/ic_schedule_24"
-            android:title="@string/schedule_lbl" />-->
+            android:title="@string/schedule_lbl" />
 
         <item
             android:id="@+id/nav_session"
