@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24"
+            android:title="@string/menu_home" />
+        <!--<item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_schedule_24"
+            android:title="@string/schedule_lbl" />-->
+
+        <item
+            android:id="@+id/nav_session"
+            android:icon="@drawable/ic_session_24"
+            android:title="@string/session_lbl" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat_24"
+            android:title="@string/chat" />
+
+    </group>
+
+
+
+
+
+
+
+</menu>

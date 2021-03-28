@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Gymaholic</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="nagivation_header_desc">Nagivation Header</string>
+    <string name="user_name_lbl">User Name</string>
+    <string name="usermail_lbl">useremail@mail.com</string>
+    <string name="menu_home">Home</string>
+    <string name="schedule_lbl">Schedule</string>
+    <string name="session_lbl">Session</string>
+    <string name="chat">Chat</string>
+    <string name="log_out_lbl">Log Out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="example_txt_home">John Smith</string>
+    <string name="example_str_home">John Smith\'s weight loss program</string>
+    <string name="pay_booking">Pay</string>
+    <string name="date_time_set">Set</string>
+    <string name="date_lbl">Date</string>
+    <string name="time_lbl">Time</string>
+    <string name="type_hint">Type here...</string>
+    <string name="send_btn">Send</string>
+    <string name="sessions_lbl">No active session yet</string>
+    <string name="hour_glass">hour glass</string>
 </resources>
