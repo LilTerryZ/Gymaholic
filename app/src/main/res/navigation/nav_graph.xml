@@ -26,9 +26,15 @@
 
     <fragment
         android:id="@+id/nav_booking"
-        android:name="com.example.gymaholic.ui.drawer.BookingFragment"
+        android:name="com.example.gymaholic.ui.booking.BookingFragment"
         android:label="Booking"
         tools:layout="@layout/booking_fragment" >
+        <action
+            android:id="@+id/booking_to_payment"
+            app:destination="@id/visaPaymentFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpToInclusive="false"/>
     </fragment>
 
     <fragment
@@ -84,6 +90,17 @@
         <action
             android:id="@+id/action_signup_to_login"
             app:destination="@id/nav_login"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/visaPaymentFragment"
+        android:name="com.example.gymaholic.ui.booking.VisaPaymentFragment"
+        android:label="Debit or Credit Visa" >
+        <action
+            android:id="@+id/payment_to_home"
+            app:destination="@id/nav_home"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"
             app:popUpToInclusive="false"/>

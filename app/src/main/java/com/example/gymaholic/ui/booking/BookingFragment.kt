@@ -1,7 +1,9 @@
-package com.example.gymaholic.ui.drawer
+package com.example.gymaholic.ui.booking
 
+import android.content.Intent
 import android.icu.util.Calendar
 import android.icu.util.GregorianCalendar
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +15,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.example.gymaholic.R
+
 
 class BookingFragment : Fragment() {
     // TODO: Rename and change types of parameters
@@ -77,6 +80,24 @@ class BookingFragment : Fragment() {
             alertDialog.setView(dialogTimeView)
             alertDialog.show()
         }
+
+        val paypalbtn = view.findViewById<View>(R.id.pay_paypal_btn)
+        paypalbtn.setOnClickListener {
+            val uri: Uri = Uri.parse("https://www.paypal.com/ca/home")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
+
+        val payvisabtn = view.findViewById<View>(R.id.pay_visa_btn)
+        payvisabtn.setOnClickListener { navController.navigate(R.id.booking_to_payment, arguments) }
+
+        val mastercardbtn = view.findViewById<View>(R.id.pay_master_btn)
+        mastercardbtn.setOnClickListener {
+            val uri: Uri = Uri.parse("https://www.mastercard.ca/en-ca.html")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
+
 
     }
 

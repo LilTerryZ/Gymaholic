@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/visaCardInput"
+        android:layout_width="377dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="xxxx xxxx xxxx xxxx"
+        app:layout_constraintBottom_toTopOf="@+id/visapay_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/visapay_btn"
+        android:layout_width="194dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/green_material"
+        android:text="@string/pay_booking"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/space5"
+        app:layout_constraintStart_toStartOf="@+id/visaCardInput"
+        app:layout_constraintTop_toBottomOf="@+id/visaCardInput" />
+
+    <Space
+        android:id="@+id/space5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visapay_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

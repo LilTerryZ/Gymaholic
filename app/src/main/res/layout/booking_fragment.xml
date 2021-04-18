@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.drawer.BookingFragment">
+    tools:context=".ui.booking.BookingFragment">
 
     <Button
         android:id="@+id/pay_master_btn"
