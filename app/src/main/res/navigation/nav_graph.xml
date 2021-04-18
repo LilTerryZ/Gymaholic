@@ -7,13 +7,13 @@
 
     <dialog
         android:id="@+id/nav_logoutDialog"
-        android:name="com.example.gymaholic.LogoutDialog"
+        android:name="com.example.gymaholic.dialogs.LogoutDialog"
         android:label="LogoutDialog" />
     <action android:id="@+id/action_global_logout" app:destination="@id/nav_login" />
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.gymaholic.HomeFragment"
+        android:name="com.example.gymaholic.ui.drawer.HomeFragment"
         android:label="Home"
         tools:layout="@layout/home_fragment">
     <action
@@ -26,34 +26,34 @@
 
     <fragment
         android:id="@+id/nav_booking"
-        android:name="com.example.gymaholic.BookingFragment"
+        android:name="com.example.gymaholic.ui.drawer.BookingFragment"
         android:label="Booking"
         tools:layout="@layout/booking_fragment" >
     </fragment>
 
     <fragment
         android:id="@+id/nav_chat"
-        android:name="com.example.gymaholic.ChatFragment"
+        android:name="com.example.gymaholic.ui.drawer.ChatFragment"
         android:label="Chat"
         tools:layout="@layout/chat_fragment" >
     </fragment>
     <fragment
         android:id="@+id/nav_session"
-        android:name="com.example.gymaholic.SessionFragment"
+        android:name="com.example.gymaholic.ui.drawer.SessionFragment"
         android:label="Session"
         tools:layout="@layout/session_fragment" >
     </fragment>
 
     <fragment
         android:id="@+id/nav_schedule"
-        android:name="com.example.gymaholic.ScheduleFragment"
+        android:name="com.example.gymaholic.ui.drawer.ScheduleFragment"
         android:label="Schedule"
         tools:layout="@layout/schedule_fragment" >
     </fragment>
 
     <fragment
         android:id="@+id/nav_login"
-        android:name="com.example.gymaholic.LoginFragment"
+        android:name="com.example.gymaholic.ui.auth.LoginFragment"
         android:label="Login"
         tools:layout="@layout/login_fragment" >
         <action
@@ -72,7 +72,7 @@
 
     <fragment
         android:id="@+id/nav_signup"
-        android:name="com.example.gymaholic.SignupFragment"
+        android:name="com.example.gymaholic.ui.auth.SignupFragment"
         android:label="Signup"
         tools:layout="@layout/signup_fragment" >
         <action
@@ -81,6 +81,12 @@
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_signup_to_login"
+            app:destination="@id/nav_login"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpToInclusive="false"/>
     </fragment>
 
 </navigation>

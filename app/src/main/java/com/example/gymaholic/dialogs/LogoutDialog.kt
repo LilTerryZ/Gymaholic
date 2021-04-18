@@ -1,12 +1,12 @@
-package com.example.gymaholic
+package com.example.gymaholic.dialogs
 
 import android.app.Dialog
-import android.content.DialogInterface
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.example.gymaholic.R
 
 class LogoutDialog : DialogFragment() {
 

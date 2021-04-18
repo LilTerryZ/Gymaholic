@@ -1,4 +1,4 @@
-package com.example.gymaholic
+package com.example.gymaholic.ui.drawer
 
 import android.icu.util.Calendar
 import android.icu.util.GregorianCalendar
@@ -12,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.example.gymaholic.R
 
 class BookingFragment : Fragment() {
     // TODO: Rename and change types of parameters

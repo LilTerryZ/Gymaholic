@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SessionFragment">
+    tools:context=".ui.drawer.SessionFragment">
 
     <TextView
         android:id="@+id/sessions_lbl_id"

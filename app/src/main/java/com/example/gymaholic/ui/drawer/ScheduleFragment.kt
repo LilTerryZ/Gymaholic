@@ -1,10 +1,11 @@
-package com.example.gymaholic
+package com.example.gymaholic.ui.drawer
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.gymaholic.R
 
 
 class ScheduleFragment : Fragment() {

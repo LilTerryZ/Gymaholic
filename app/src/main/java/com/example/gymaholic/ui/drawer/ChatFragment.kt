@@ -1,4 +1,4 @@
-package com.example.gymaholic
+package com.example.gymaholic.ui.drawer
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.ui.NavigationUI
+import com.example.gymaholic.R
 
 
 class ChatFragment : Fragment() {
