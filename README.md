@@ -7,4 +7,4 @@
 - Each team memeber also generally helped out on each others parts
 
 # Video demonstration
-- [https://youtu.be/p26W7EfxNYM]
+- https://youtu.be/p26W7EfxNYM
